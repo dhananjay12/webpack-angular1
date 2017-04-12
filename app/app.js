@@ -13,3 +13,10 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
   $routeProvider.otherwise({redirectTo: '/view1'});
   console.log('startup zzzzzzz');
 }]);
+
+require('./view1/view1.js');
+require('./view2/view2.js');
+require('./components/version/version.js');
+require('./components/version/version-directive.js');
+require('./components/version/interpolate-filter.js');
+
